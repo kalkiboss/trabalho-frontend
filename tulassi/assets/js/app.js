@@ -1,4 +1,3 @@
-/* Demonstração local: não há autenticação nem serviço de agendamento remoto. */
 (() => {
   "use strict";
   const SESSION_KEY = "tulassi.profile.v1";

@@ -1,5 +1,4 @@
-# Tulassi · demonstração acadêmica
-
+# Tulassi
 Abra `index.html` no navegador ou use a extensão Live Server no VS Code. Não há instalação, dependências ou conexão com servidor.
 
 ## Estrutura
