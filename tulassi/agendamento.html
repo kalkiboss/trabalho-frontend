@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#294b49">
+  <title>Solicitar sessão | Tulassi</title>
+  <link rel="stylesheet" href="assets/css/style.css"><script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="schedule">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header"><div class="header-inner"><a class="brand-lockup" href="dashboard.html" aria-label="Tulassi, página inicial"><span class="brand-mark" aria-hidden="true">✳</span><span>Tulassi</span></a><nav aria-label="Navegação principal"><a href="dashboard.html">Minhas sessões</a><a href="agendamento.html" aria-current="page">Solicitar sessão</a><a class="nav-button" href="index.html" data-logout>Sair</a></nav></div></header>
+  <main id="conteudo" class="container form-layout"><section class="form-intro"><p class="eyebrow">Um momento para você</p><h1>Solicite sua sessão.</h1><p class="lead">Escolha o cuidado e o horário que combinam com sua rotina.</p><ol class="steps"><li>Escolha a sessão</li><li>Indique data e horário</li><li>Veja a solicitação em seu painel</li></ol><p class="fine-print">Projeto acadêmico: o pedido será salvo apenas neste navegador e não representa uma reserva real.</p></section>
+    <section class="surface form-surface" aria-labelledby="form-title"><h2 id="form-title">Dados da sessão</h2><form id="schedule-form" novalidate><div id="form-error" class="feedback feedback-error" role="alert" tabindex="-1" hidden></div>
+      <div class="field"><label for="servico">Tipo de sessão</label><select id="servico" name="servico" required aria-describedby="servico-error"><option value="">Selecione uma opção</option><option value="Terapia holística">Terapia holística</option><option value="Acupuntura">Acupuntura</option><option value="Yoga particular">Yoga particular</option></select><small class="field-error" id="servico-error"></small></div>
+      <div class="field-grid"><div class="field"><label for="data">Data desejada</label><input type="date" id="data" name="data" required aria-describedby="data-error"><small class="field-error" id="data-error"></small></div><div class="field"><label for="horario">Horário preferencial</label><input type="time" id="horario" name="horario" min="08:00" max="18:00" step="1800" required aria-describedby="horario-help horario-error"><small class="help" id="horario-help">Entre 08h e 18h, a cada 30 minutos.</small><small class="field-error" id="horario-error"></small></div></div>
+      <fieldset class="field"><legend>Modalidade</legend><div class="choices"><label><input type="radio" name="modalidade" value="Presencial" checked> Presencial</label><label><input type="radio" name="modalidade" value="Online"> Online</label></div></fieldset>
+      <div class="field"><label for="observacoes">Observações <span class="optional">(opcional)</span></label><textarea class="resize-none" id="observacoes" name="observacoes" rows="3" maxlength="300" placeholder="Algo que gostaria de informar antes da sessão?"></textarea></div>
+      <div class="field"><label class="checkbox-label" for="ciente"><input type="checkbox" id="ciente" name="ciente" required aria-describedby="ciente-error"><span>Entendi que esta é uma demonstração e não uma reserva real.</span></label><small class="field-error" id="ciente-error"></small></div>
+      <div class="form-actions"><button class="button button-primary" type="submit">Salvar solicitação <span aria-hidden="true">→</span></button><a class="button button-subtle" href="dashboard.html">Voltar ao painel</a></div>
+    </form></section>
+  </main><footer class="site-footer">Projeto acadêmico</footer>
+</body>
+</html>

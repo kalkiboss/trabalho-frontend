@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#294b49">
+  <title>Minhas sessões | Tulassi</title>
+  <link rel="stylesheet" href="assets/css/style.css"><script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="dashboard">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header"><div class="header-inner"><a class="brand-lockup" href="dashboard.html" aria-label="Tulassi, página inicial"><span class="brand-mark" aria-hidden="true">✳</span><span>Tulassi</span></a><nav aria-label="Navegação principal"><a href="dashboard.html" aria-current="page">Minhas sessões</a><a href="agendamento.html">Solicitar sessão</a><a class="nav-button" href="index.html" data-logout>Sair</a></nav></div></header>
+  <main id="conteudo" class="container">
+    <section class="page-heading"><div><p class="eyebrow">Seu espaço</p><h1>Olá, <span id="welcome-name">visitante</span>.</h1><p class="lead">Acompanhe suas solicitações e encontre um horário para você.</p></div><a class="button button-primary" href="agendamento.html">Solicitar sessão <span aria-hidden="true">→</span></a></section>
+    <div id="status-message" class="feedback feedback-success" role="status" tabindex="-1" hidden></div>
+    <div class="dashboard-grid">
+      <section class="surface session-section" aria-labelledby="sessions-title"><div class="section-heading"><div><p class="eyebrow">Agenda</p><h2 id="sessions-title">Minhas solicitações</h2></div><span id="session-count" class="count"></span></div>
+        <div class="table-scroll"><table><caption class="sr-only">Solicitações de sessão salvas neste navegador</caption><thead><tr><th scope="col">Data e hora</th><th scope="col">Serviço</th><th scope="col">Modalidade</th><th scope="col">Status</th></tr></thead><tbody id="session-rows"></tbody></table></div>
+        <div id="empty-state" class="empty-state" hidden><p>Você ainda não solicitou uma sessão.</p><a href="agendamento.html">Escolher uma data e horário →</a></div>
+        <p class="fine-print">As solicitações são demonstrações locais. Nenhum profissional recebe esses dados.</p>
+      </section>
+      <aside class="surface care-card" aria-labelledby="care-title"><p class="eyebrow">Pequenas pausas</p><h2 id="care-title">Cuidar de si cabe na rotina.</h2><ul class="tips-list"><li>Faça uma pausa para beber água.</li><li>Alongue o corpo entre as tarefas.</li><li>Reserve alguns minutos para respirar.</li></ul><p class="fine-print">Sugestões gerais de bem-estar; não substituem orientação profissional.</p></aside>
+    </div>
+  </main>
+  <footer class="site-footer">Projeto acadêmicos</footer>
+</body>
+</html>
